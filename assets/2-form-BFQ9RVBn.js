@@ -1,2 +1,0 @@
-let a={email:"",message:""};const t=document.querySelector(".feedback-form");t.addEventListener("input",e=>{a[e.target.name]=e.target.value,localStorage.setItem("feedback-form-state",JSON.stringify(a))});t.addEventListener("submit",e=>{e.preventDefault(),e.target.email.value!==""&&e.target.message.value!==""?(t.reset(),console.log(localStorage.getItem("feedback-form-state")),localStorage.clear()):alert("all fields must be filled")});
-//# sourceMappingURL=2-form-BFQ9RVBn.js.map
